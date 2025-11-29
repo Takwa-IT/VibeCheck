@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Couleurs de Base (pour thème général) -->
+    <color name="primary_blue">#2196F3</color>  <!-- Bleu principal -->
+    <color name="primary_light">#E3F2FD</color>  <!-- Bleu clair (calme) -->
+    <color name="accent_green">#E8F5E8</color>  <!-- Vert doux (espoir) -->
+    <color name="accent_yellow">#FFF3E0</color>  <!-- Jaune fun (amusement) -->
+    <color name="text_dark">#1976D2</color>  <!-- Texte sombre -->
+    <color name="text_light">#666666</color>  <!-- Texte clair -->
+    <color name="background_light">#F5F5F5</color>  <!-- Fond clair -->
+    <color name="white">#FFFFFF</color>  <!-- Fond clair -->
+
+    <!-- Couleurs douces et moins contrastées -->
+    <color name="soft_purple">#FF9575D9</color>
+    <color name="softer_purple">#FF7E57C2</color>
+    <color name="soft_pink">#FFEC7BAD</color>
+    <color name="softer_pink">#FFE091C2</color>
+
+
+    <!-- Couleurs Dark Mode (pour login/emotion_dashboard) -->
+    <color name="background_dark">#121212</color>  <!-- Fond sombre -->
+    <color name="surface_dark">#1E1E1E</color>  <!-- Surface sombre (cards) -->
+    <color name="text_primary_dark">#FFFFFF</color>  <!-- Texte principal sombre (blanc) -->
+    <color name="text_secondary_dark">#BDBDBD</color>  <!-- Texte secondaire sombre (gris clair) -->
+
+    <!-- Accents (pour boutons/login) -->
+    <color name="primary_accent">#FF4081</color>  <!-- Accent rose principal -->
+    <color name="primary_accent_variant">#F50057</color>  <!-- Variant accent (hover) -->
+
+    <!-- Couleurs Cards Émotions -->
+    <color name="card_stress">#FFE0B2</color>  <!-- Orange stress -->
+    <color name="card_fatigue">#F3E5F5</color>  <!-- Violet fatigue -->
+    <color name="card_joy">#E3F2FD</color>  <!-- Bleu joyeux -->
+    <color name="card_anx">#FCE4EC</color>  <!-- Rose anxieux -->
+    <color name="card_mot">#E0F2F1</color>  <!-- Vert motivé -->
+    <color name="card_triste">#EFEBE9</color>  <!-- Beige triste -->
+    <color name="card_sad">#EFEBE9</color>  <!-- Alias triste -->
+    <color name="card_motivated">#E0F2F1</color>  <!-- Alias motivé -->
+    <color name="selected_pink">#FF4081</color>  <!-- Rose vif comme dans la capture d'écran -->
+    <color name="soft_blue">#FF4FC3F7</color>
+    <color name="soft_green">#FF81C784</color>
+</resources>

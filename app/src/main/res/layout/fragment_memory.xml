@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/soft_blue"
+    android:gravity="center">
+
+    <!-- Titre plus compact -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🧠 Mémoire"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Score plus compact -->
+    <TextView
+        android:id="@+id/tvPairsFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paires: 0/6"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bubble_shape"
+        android:padding="6dp" />
+
+    <!-- Grille principale avec hauteur fixe -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:columnCount="4"
+        android:rowCount="3"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Bouton plus compact -->
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔄 Nouvelle Partie"
+        android:textSize="14sp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:backgroundTint="@color/soft_purple"
+        android:textColor="@color/white" />
+
+    <!-- Message de glissement - positionné en bas -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⬅️ Glisse pour changer de jeu ➡️"
+        android:textSize="12sp"
+        android:textColor="#CCFFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="8dp" />
+
+</LinearLayout>

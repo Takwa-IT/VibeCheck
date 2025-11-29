@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group android:scaleX="0.9" android:scaleY="0.9" android:translateX="5.4" android:translateY="5.4">
+        <!-- Ceci est une SIMULATION de votre logo. Ce n'est pas une conversion exacte. -->
+        <!-- La vague rose -->
+        <path
+            android:fillColor="#B54D88"
+            android:pathData="M75,25 C60,25 50,40 50,55 C50,70 60,85 75,85 L25,85 C20,85 15,80 15,75 C15,60 30,55 35,50 C40,45 25,35 25,25 C25,15 35,15 40,15 L75,15 C80,15 85,20 85,25 Z" />
+        <!-- Le sourire -->
+        <path
+            android:strokeColor="#333333"
+            android:strokeWidth="2"
+            android:pathData="M45,45 Q50,55 55,45" />
+        <!-- Les yeux -->
+        <path
+            android:fillColor="#333333"
+            android:pathData="M45,40m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+        <path
+            android:fillColor="#333333"
+            android:pathData="M55,40m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    </group>
+</vector>

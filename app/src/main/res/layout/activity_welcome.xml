@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    tools:context=".WelcomeActivity"
+    android:padding="24dp">
+
+    <!-- Illustration : pour un look moderne et visuel -->
+    <!-- Vous pouvez remplacer `ic_welcome_illustration` par n'importe quelle image de votre choix -->
+    <ImageView
+        android:id="@+id/ivWelcomeIllustration"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_welcome_illustration"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvWelcomeTitle"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintWidth_percent="0.7"/>
+
+    <!-- Titre de bienvenue, plus grand et plus impactant -->
+    <TextView
+        android:id="@+id/tvWelcomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bienvenue,"
+        android:textColor="@color/text_secondary_dark"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/ivWelcomeIllustration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvUserName"/>
+
+    <!-- Nom de l'utilisateur, mis en valeur -->
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="Takwa !"
+        android:textColor="@color/primary_accent"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomeTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvWelcomeSubtitle"/>
+
+    <!-- Message d'encouragement -->
+    <TextView
+        android:id="@+id/tvWelcomeSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Prêt(e) à explorer vos émotions et à prendre soin de vous ?"
+        android:textColor="@color/text_primary_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName"
+        app:layout_constraintBottom_toTopOf="@id/btnStart"/>
+
+    <!-- Bouton pour commencer : l'action principale -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStart"
+        style="@style/Widget.VibeCheck.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Commencer"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomeSubtitle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "367291388719",
+    "project_id": "vibecheck-b1ad4",
+    "storage_bucket": "vibecheck-b1ad4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367291388719:android:562d908f37caec89a847da",
+        "android_client_info": {
+          "package_name": "com.example.vibecheck"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBIdIt_2-Htkz8lmkaxWPJMLKb5n8KPh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

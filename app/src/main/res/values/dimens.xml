@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ... other dimensions might be here ... -->        <!-- Add this line -->
+    <dimen name="emotion_card_fixed_height">200dp</dimen>
+    <!-- Taille des cartes mémoire réduite -->
+    <dimen name="memory_card_size_small">60dp</dimen>
+    <dimen name="memory_card_size">80dp</dimen>
+    <dimen name="dot_size">12dp</dimen>
+    <dimen name="dot_margin">6dp</dimen>
+</resources>
+    

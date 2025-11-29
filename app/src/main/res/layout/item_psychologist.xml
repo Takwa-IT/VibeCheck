@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/primary_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr. Sophie Martin"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark" />
+
+        <TextView
+            android:id="@+id/tvSpecialty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spécialiste en anxiété et stress"
+            android:textSize="14sp"
+            android:textColor="@color/text_light"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2.5 km • Note: 4.8/5"
+            android:textSize="12sp"
+            android:textColor="@color/accent_green"
+            android:layout_marginTop="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContact"
+            style="@style/GentleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appeler / Contact"
+            android:backgroundTint="@android:color/transparent"
+            app:strokeColor="@color/primary_blue"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="end" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

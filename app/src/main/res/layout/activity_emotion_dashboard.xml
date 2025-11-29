@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:fillViewport="true"
+    tools:context=".EmotionDashboardActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="24dp">
+
+<!-- Titre principal -->
+<TextView
+    android:id="@+id/tvQuestion"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:gravity="center"
+    android:text="Comment te sens-tu aujourd'hui ?"
+    android:textColor="@color/text_primary_dark"
+    android:textSize="28sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<!-- Conteneur fixe pour les cartes (LinearLayout pour lignes horizontales) -->
+<LinearLayout
+    android:id="@+id/emotionContainer"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvQuestion" />
+
+<!-- Ligne de séparation -->
+<View
+    android:id="@+id/divider"
+    android:layout_width="100dp"
+    android:layout_height="1dp"
+    android:layout_marginTop="32dp"
+    android:background="@color/surface_dark"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/emotionContainer" />
+
+<TextView
+    android:id="@+id/tvCustomLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="OU"
+    android:textColor="@color/text_secondary_dark"
+    android:textSize="14sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/divider" />
+
+<!-- Champ personnalisé -->
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tilCustomEmotion"
+    style="@style/Widget.VibeCheck.TextInputLayout"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:hint="Décris ton émotion"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvCustomLabel">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etCustomEmotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:textColor="@color/text_primary_dark" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<!-- Bouton validate -->
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/btnValidate"
+    style="@style/Widget.VibeCheck.Button"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:text="Valider et continuer"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tilCustomEmotion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
